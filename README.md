@@ -10,104 +10,66 @@ The differential amplifier is a core analog circuit used in operational amplifie
 
 ---
 
-## Theory 🧠
+## 📘 Theory
 
-### Differential Amplifier Basics
-A differential amplifier amplifies the difference between two input signals. It is widely used as the input stage of operational amplifiers due to its high common-mode rejection ratio (CMRR) and good linearity.
+A **differential amplifier** amplifies the difference between two input voltages while rejecting any voltage common to both inputs. It forms the core of many analog ICs such as op-amps and comparators.
 
----
-
-### ➤ Differential Gain (A<sub>vd</sub>)
+### 🔹 Differential Gain (Avd)
 
 The differential-mode gain is defined as:
 
-\[
-A_{vd} = \frac{V_{out}}{V_{in+} - V_{in-}}
-\]
+**Avd = Vout / (Vin+ − Vin−)**
 
-- If the AC magnitude is 1V at `vin+` and `vin-` is grounded, then:
+- If **Vin+ = 1 V (AC)** and **Vin− = 0 V (AC grounded)**, then:
 
-\[
-A_{vd} = |V_{out}|
-\]
+  → **Avd = |Vout|**
 
-Or in decibels (dB):
+- To express gain in decibels (dB):
 
-\[
-A_{vd(dB)} = 20 \cdot \log_{10}(A_{vd})
-\]
+  **Avd (dB) = 20 × log₁₀(Avd)**
 
 ---
 
-### ➤ Bandwidth (BW)
+### 🔹 Bandwidth (BW)
 
-Bandwidth is the frequency range over which the gain remains constant (within -3 dB of maximum gain):
+Bandwidth refers to the range of frequencies over which the amplifier maintains its performance. It is defined between the −3 dB cutoff frequencies:
 
-\[
-BW = f_{H} - f_{L}
-\]
+**Bandwidth = f_high − f_low**
 
-Where:
-- \( f_H \) = Upper cutoff frequency (gain drops by 3 dB)
-- \( f_L \) = Lower cutoff frequency
+- *f_high* and *f_low* are the upper and lower −3 dB points where gain drops by 3 dB from the midband gain.
 
 ---
 
-### ➤ Unity-Gain Bandwidth
+### 🔹 Unity Gain Bandwidth
 
-The **Unity-Gain Bandwidth** is the frequency at which the gain becomes 1 (0 dB):
-
-\[
-\text{UGBW} = \text{frequency at which } |A_{vd}| = 1
-\]
+This is the frequency at which the **magnitude of gain becomes 1 (0 dB)**. For high-speed amplifiers, it indicates the maximum usable frequency when configured in a unity-gain feedback.
 
 ---
 
-### ➤ Common-Mode Gain (A<sub>vc</sub>)
+### 🔹 Common Mode Gain (Avc)
 
-Common-mode gain measures how much of the same signal applied to both inputs appears at the output:
+When both inputs are driven by the same signal (common-mode input), the gain is:
 
-\[
-A_{vc} = \frac{V_{out}}{V_{in+} = V_{in-}}
-\]
+**Avc = Vout / Vcommon**
 
-Ideally, \( A_{vc} = 0 \)
+Where **Vcommon** is the voltage applied equally to both inputs.
 
 ---
 
-### ➤ Common-Mode Rejection Ratio (CMRR)
+### 🔹 Common Mode Rejection Ratio (CMRR)
 
-CMRR indicates how well the amplifier rejects common-mode signals:
+**CMRR = Avd / Avc**
 
-\[
-\text{CMRR} = \frac{A_{vd}}{A_{vc}}
-\quad \text{or in dB:} \quad
-\text{CMRR}_{dB} = 20 \cdot \log_{10} \left( \frac{A_{vd}}{A_{vc}} \right)
-\]
+- In dB: **CMRR(dB) = 20 × log₁₀(Avd / Avc)**
 
-Higher CMRR = better differential performance.
+A high CMRR indicates good rejection of common-mode signals (e.g., noise).
 
 ---
 
-### ➤ Gain from Device Parameters
+### 🔹 Input Resistance (Rin) and Output Resistance (Rout)
 
-In long-channel approximation, the differential gain can also be estimated using device parameters:
-
-\[
-A_{vd} = g_m \cdot R_D
-\quad \text{where} \quad
-g_m = \mu_n C_{ox} \frac{W}{L} (V_{GS} - V_{th})
-\]
-
-Or,
-
-\[
-g_m = \frac{2I_D}{V_{ov}} = \frac{2I_D}{V_{GS} - V_{th}}
-\]
-
----
-
-> 💡 All these parameters are verified using Cadence Virtuoso Spectre simulation with AC analysis.
+- **Rin** is typically high to minimize loading on the input source.
+- **Rout** should be low to drive the load effectively.
 
 
 ## Simulation Details
