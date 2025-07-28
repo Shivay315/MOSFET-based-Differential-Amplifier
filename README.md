@@ -54,14 +54,14 @@ A differential amplifier amplifies the difference between two input signals and 
 | Image                            | Description                                 |
 |----------------------------------|---------------------------------------------|
 | ![AC Response](Images/AC%20Response.png) | Frequency response of the amplifier (gain vs frequency). |
-| ![DC Response](Images/DC Response.png) | DC sweep analysis showing biasing behavior. |
-| ![Differential Amplifier Schematic](Images/Differential Amplifier Schematic.png) | Complete schematic of the differential amplifier. |
-| ![Differential Amplifier TB](Images/Differential Amplifier TB.png) | Testbench setup used for simulation. |
-| ![Simulation Tab](Images/Simulation Tab.png) | Screenshot of the simulation configuration or environment. |
-| ![Transient Response](Images/Transient Response.png) | Time-domain response showing output vs time. |
-| ![nmos1 details](Images/nmos1 details.png) | Characteristics/details of the first NMOS transistor. |
-| ![nmos2 details](Images/nmos2 details.png) | Characteristics/details of the second NMOS transistor. |
-| ![pmos details](Images/pmos details.png) | Characteristics/details of the PMOS transistor. |
+| ![DC Response](Images/DC%20Response.png) | DC sweep analysis showing biasing behavior. |
+| ![Differential Amplifier Schematic](Images/Differential%20Amplifier%20Schematic.png) | Complete schematic of the differential amplifier. |
+| ![Differential Amplifier TB](Images/Differential%20Amplifier%20TB.png) | Testbench setup used for simulation. |
+| ![Simulation Tab](Images/Simulation%20Tab.png) | Screenshot of the simulation configuration or environment. |
+| ![Transient Response](Images/Transient%20Response.png) | Time-domain response showing output vs time. |
+| ![nmos1 details](Images/nmos1%20details.png) | Characteristics/details of the first NMOS transistor. |
+| ![nmos2 details](Images/nmos2%20details.png) | Characteristics/details of the second NMOS transistor. |
+| ![pmos details](Images/pmos%20details.png) | Characteristics/details of the PMOS transistor. |
 
 ---
 
