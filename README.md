@@ -53,7 +53,7 @@ A differential amplifier amplifies the difference between two input signals and 
 
 | Image                            | Description                                 |
 |----------------------------------|---------------------------------------------|
-| ![AC Response](Images/AC Response.png) | Frequency response of the amplifier (gain vs frequency). |
+| ![AC Response](Images/AC%20Response.png) | Frequency response of the amplifier (gain vs frequency). |
 | ![DC Response](Images/DC Response.png) | DC sweep analysis showing biasing behavior. |
 | ![Differential Amplifier Schematic](Images/Differential Amplifier Schematic.png) | Complete schematic of the differential amplifier. |
 | ![Differential Amplifier TB](Images/Differential Amplifier TB.png) | Testbench setup used for simulation. |
