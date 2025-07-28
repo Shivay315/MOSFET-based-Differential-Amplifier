@@ -1,4 +1,4 @@
-# Differential Amplifier (Cadence)
+# Differential Amplifier
 
 This project involves the design, simulation, and analysis of a **differential amplifier** using **MOSFET** in **Cadence Virtuoso**. It focuses on frequency response analysis and includes calculation of key performance parameters such as **Bandwidth** and **Unity Gain Bandwidth**.
 
