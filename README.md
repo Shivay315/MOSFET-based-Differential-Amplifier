@@ -10,22 +10,105 @@ The differential amplifier is a core analog circuit used in operational amplifie
 
 ---
 
-## Theory
+## Theory 🧠
 
-A differential amplifier amplifies the difference between two input signals and rejects common-mode signals. Key equations:
-
-- **Differential Gain (Ad):**  
-  \[
-  A_d = \frac{V_{out}}{V_{in+} - V_{in-}}
-  \]
-
-- **Bandwidth (BW):**  
-  The frequency range over which the gain stays within -3 dB of the maximum gain.
-
-- **Unity Gain Bandwidth (UGBW):**  
-  The frequency at which the gain becomes 1 (0 dB).
+### Differential Amplifier Basics
+A differential amplifier amplifies the difference between two input signals. It is widely used as the input stage of operational amplifiers due to its high common-mode rejection ratio (CMRR) and good linearity.
 
 ---
+
+### ➤ Differential Gain (A<sub>vd</sub>)
+
+The differential-mode gain is defined as:
+
+\[
+A_{vd} = \frac{V_{out}}{V_{in+} - V_{in-}}
+\]
+
+- If the AC magnitude is 1V at `vin+` and `vin-` is grounded, then:
+
+\[
+A_{vd} = |V_{out}|
+\]
+
+Or in decibels (dB):
+
+\[
+A_{vd(dB)} = 20 \cdot \log_{10}(A_{vd})
+\]
+
+---
+
+### ➤ Bandwidth (BW)
+
+Bandwidth is the frequency range over which the gain remains constant (within -3 dB of maximum gain):
+
+\[
+BW = f_{H} - f_{L}
+\]
+
+Where:
+- \( f_H \) = Upper cutoff frequency (gain drops by 3 dB)
+- \( f_L \) = Lower cutoff frequency
+
+---
+
+### ➤ Unity-Gain Bandwidth
+
+The **Unity-Gain Bandwidth** is the frequency at which the gain becomes 1 (0 dB):
+
+\[
+\text{UGBW} = \text{frequency at which } |A_{vd}| = 1
+\]
+
+---
+
+### ➤ Common-Mode Gain (A<sub>vc</sub>)
+
+Common-mode gain measures how much of the same signal applied to both inputs appears at the output:
+
+\[
+A_{vc} = \frac{V_{out}}{V_{in+} = V_{in-}}
+\]
+
+Ideally, \( A_{vc} = 0 \)
+
+---
+
+### ➤ Common-Mode Rejection Ratio (CMRR)
+
+CMRR indicates how well the amplifier rejects common-mode signals:
+
+\[
+\text{CMRR} = \frac{A_{vd}}{A_{vc}}
+\quad \text{or in dB:} \quad
+\text{CMRR}_{dB} = 20 \cdot \log_{10} \left( \frac{A_{vd}}{A_{vc}} \right)
+\]
+
+Higher CMRR = better differential performance.
+
+---
+
+### ➤ Gain from Device Parameters
+
+In long-channel approximation, the differential gain can also be estimated using device parameters:
+
+\[
+A_{vd} = g_m \cdot R_D
+\quad \text{where} \quad
+g_m = \mu_n C_{ox} \frac{W}{L} (V_{GS} - V_{th})
+\]
+
+Or,
+
+\[
+g_m = \frac{2I_D}{V_{ov}} = \frac{2I_D}{V_{GS} - V_{th}}
+\]
+
+---
+
+> 💡 All these parameters are verified using Cadence Virtuoso Spectre simulation with AC analysis.
+
 
 ## Simulation Details
 
