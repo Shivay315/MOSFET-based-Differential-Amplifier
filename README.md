@@ -1,2 +1,88 @@
-# MOSFET-based-Differential-Amplifier
-This project involves the design and simulation of a Differential Amplifier using Cadence Virtuoso and Spectre. The amplifier is designed to operate in the analog domain, amplifying the difference between two input signals while rejecting common-mode signals.
+# Differential Amplifier (Cadence)
+
+This project involves the design, simulation, and analysis of a **differential amplifier** using **Cadence Virtuoso**. It focuses on frequency response analysis and includes calculation of key performance parameters such as **Bandwidth** and **Unity Gain Bandwidth**.
+
+---
+
+## 📘 Abstract
+
+The differential amplifier is a core analog circuit used in operational amplifiers and signal processing systems. This project involves simulating the differential pair using Cadence tools, analyzing its AC response, and calculating essential frequency-domain parameters.
+
+---
+
+## ⚙️ Theory
+
+A differential amplifier amplifies the difference between two input signals and rejects common-mode signals. Key equations:
+
+- **Differential Gain (Ad):**  
+  \[
+  A_d = \frac{V_{out}}{V_{in+} - V_{in-}}
+  \]
+
+- **Bandwidth (BW):**  
+  The frequency range over which the gain stays within -3 dB of the maximum gain.
+
+- **Unity Gain Bandwidth (UGBW):**  
+  The frequency at which the gain becomes 1 (0 dB).
+
+---
+
+## 🧪 Simulation Details
+
+- **Technology:** 180nm CMOS
+- **Tool:** Cadence Virtuoso (Spectre Simulator)
+- **Analysis:** AC Sweep
+- **Output Node:** `vo`
+- **Input Type:** Differential AC input with small signal
+
+---
+
+## 📊 Results
+
+| Parameter              | Value         |
+|------------------------|---------------|
+| Differential Gain (Ad) | Depends on Bias |
+| **Bandwidth**          | *Fill Me Once Measured* |
+| **Unity Gain Bandwidth** | **1.2112 GHz** |
+
+> ✅ The Unity Gain Bandwidth was found by plotting the AC response of the amplifier and identifying the frequency at which the magnitude of gain drops to 0 dB.
+
+---
+
+## 📎 Included Files
+
+- `schematic.png`: Schematic of the differential amplifier  
+- `symbol.png`: Created symbol for amplifier  
+- `ac_response.png`: Frequency response (magnitude vs frequency)  
+- `gain_analysis.txt`: Notes and analysis  
+
+---
+
+## 📌 Discussion
+
+- The amplifier shows a **wide frequency response**, suitable for high-speed analog front ends.
+- The gain begins to drop past a few MHz, with unity gain observed at **1.2112 GHz**.
+- Further bandwidth refinement is possible by optimizing transistor sizing and bias current.
+
+---
+
+## 📚 Future Improvements
+
+- Add Common-Mode Rejection Ratio (CMRR) analysis  
+- Perform transient analysis with differential pulse input  
+- Monte Carlo simulations for mismatch effects
+
+---
+
+## 🧠 Author
+
+Shivay 💫  
+Electrical Engineer | Analog Circuit Enthusiast  
+Inspired by *Your Lie in April* and driven by tech dreams as cute as a Mitsuha smile~
+
+---
+
+## 🌌 License
+
+This project is open for academic use and learning purposes.
+
