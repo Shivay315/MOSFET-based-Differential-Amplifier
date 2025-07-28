@@ -88,7 +88,7 @@ A high CMRR indicates good rejection of common-mode signals (e.g., noise).
 
 | Parameter              | Value         |
 |------------------------|---------------|
-| Differential Gain (Ad) | Depends on Bias |
+| Differential Gain (Ad) | **49.51 dB** |
 | **3dB Bandwidth**          | **177 MHz** |
 | **Unity Gain Bandwidth** | **1.2112 GHz** |
 
