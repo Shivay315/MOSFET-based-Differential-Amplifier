@@ -31,7 +31,7 @@ The differential-mode gain is defined as:
 
 
 
-### 🔹 Bandwidth (BW)
+### Bandwidth (BW)
 
 Bandwidth refers to the range of frequencies over which the amplifier maintains its performance. It is defined between the −3 dB cutoff frequencies:
 
@@ -41,13 +41,13 @@ Bandwidth refers to the range of frequencies over which the amplifier maintains 
 
 
 
-### 🔹 Unity Gain Bandwidth
+### Unity Gain Bandwidth
 
 This is the frequency at which the **magnitude of gain becomes 1 (0 dB)**. For high-speed amplifiers, it indicates the maximum usable frequency when configured in a unity-gain feedback.
 
 
 
-### 🔹 Common Mode Gain (Avc)
+### Common Mode Gain (Avc)
 
 When both inputs are driven by the same signal (common-mode input), the gain is:
 
@@ -57,7 +57,7 @@ Where **Vcommon** is the voltage applied equally to both inputs.
 
 
 
-### 🔹 Common Mode Rejection Ratio (CMRR)
+### Common Mode Rejection Ratio (CMRR)
 
 **CMRR = Avd / Avc**
 
@@ -67,7 +67,7 @@ A high CMRR indicates good rejection of common-mode signals (e.g., noise).
 
 
 
-### 🔹 Input Resistance (Rin) and Output Resistance (Rout)
+### Input Resistance (Rin) and Output Resistance (Rout)
 
 - **Rin** is typically high to minimize loading on the input source.
 - **Rout** should be low to drive the load effectively.
@@ -88,7 +88,7 @@ A high CMRR indicates good rejection of common-mode signals (e.g., noise).
 
 | Parameter              | Value         |
 |------------------------|---------------|
-| Differential Gain (Ad) | **49.51 dB** |
+| **Differential Gain (Ad)** | **49.51 dB** |
 | **3dB Bandwidth**          | **177 MHz** |
 | **Unity Gain Bandwidth** | **1.2112 GHz** |
 
