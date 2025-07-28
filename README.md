@@ -4,13 +4,13 @@ This project involves the design, simulation, and analysis of a **differential a
 
 ---
 
-## 📘 Abstract
+## Abstract
 
 The differential amplifier is a core analog circuit used in operational amplifiers and signal processing systems. This project involves simulating the differential pair using Cadence tools, analyzing its AC response, and calculating essential frequency-domain parameters.
 
 ---
 
-## ⚙️ Theory
+## Theory
 
 A differential amplifier amplifies the difference between two input signals and rejects common-mode signals. Key equations:
 
@@ -27,7 +27,7 @@ A differential amplifier amplifies the difference between two input signals and 
 
 ---
 
-## 🧪 Simulation Details
+## Simulation Details
 
 - **Technology:** 180nm CMOS
 - **Tool:** Cadence Virtuoso (Spectre Simulator)
@@ -37,15 +37,15 @@ A differential amplifier amplifies the difference between two input signals and 
 
 ---
 
-## 📊 Results
+## Results
 
 | Parameter              | Value         |
 |------------------------|---------------|
 | Differential Gain (Ad) | Depends on Bias |
-| **Bandwidth**          | *Fill Me Once Measured* |
+| **3dB Bandwidth**          | **177 MHz** |
 | **Unity Gain Bandwidth** | **1.2112 GHz** |
 
-> ✅ The Unity Gain Bandwidth was found by plotting the AC response of the amplifier and identifying the frequency at which the magnitude of gain drops to 0 dB.
+>  The Unity Gain Bandwidth was found by plotting the AC response of the amplifier and identifying the frequency at which the magnitude of gain drops to 0 dB.
 
 ---
 
@@ -58,7 +58,7 @@ A differential amplifier amplifies the difference between two input signals and 
 
 ---
 
-## 📌 Discussion
+## Discussion
 
 - The amplifier shows a **wide frequency response**, suitable for high-speed analog front ends.
 - The gain begins to drop past a few MHz, with unity gain observed at **1.2112 GHz**.
@@ -66,23 +66,5 @@ A differential amplifier amplifies the difference between two input signals and 
 
 ---
 
-## 📚 Future Improvements
 
-- Add Common-Mode Rejection Ratio (CMRR) analysis  
-- Perform transient analysis with differential pulse input  
-- Monte Carlo simulations for mismatch effects
-
----
-
-## 🧠 Author
-
-Shivay 💫  
-Electrical Engineer | Analog Circuit Enthusiast  
-Inspired by *Your Lie in April* and driven by tech dreams as cute as a Mitsuha smile~
-
----
-
-## 🌌 License
-
-This project is open for academic use and learning purposes.
 
