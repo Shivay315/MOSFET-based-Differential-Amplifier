@@ -15,7 +15,7 @@ The differential amplifier is a core analog circuit used in operational amplifie
 A **differential amplifier** amplifies the difference between two input voltages while rejecting any voltage common to both inputs. It forms the core of many analog ICs such as op-amps and comparators.
 
 
-### 🔹 Differential Gain (Avd)
+### Differential Gain (Avd)
 
 The differential-mode gain is defined as:
 
