@@ -76,7 +76,7 @@ A high CMRR indicates good rejection of common-mode signals (e.g., noise).
 
 ## Simulation Details
 
-- **Technology:** 180nm CMOS
+- **Technology:** 2um CMOS
 - **Tool:** Cadence Virtuoso (Spectre Simulator)
 - **Analysis:** AC Sweep
 - **Output Node:** `vo`
