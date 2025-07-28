@@ -14,6 +14,7 @@ The differential amplifier is a core analog circuit used in operational amplifie
 
 A **differential amplifier** amplifies the difference between two input voltages while rejecting any voltage common to both inputs. It forms the core of many analog ICs such as op-amps and comparators.
 
+
 ### 🔹 Differential Gain (Avd)
 
 The differential-mode gain is defined as:
@@ -29,6 +30,7 @@ The differential-mode gain is defined as:
   **Avd (dB) = 20 × log₁₀(Avd)**
 
 
+
 ### 🔹 Bandwidth (BW)
 
 Bandwidth refers to the range of frequencies over which the amplifier maintains its performance. It is defined between the −3 dB cutoff frequencies:
@@ -38,9 +40,11 @@ Bandwidth refers to the range of frequencies over which the amplifier maintains 
 - *f_high* and *f_low* are the upper and lower −3 dB points where gain drops by 3 dB from the midband gain.
 
 
+
 ### 🔹 Unity Gain Bandwidth
 
 This is the frequency at which the **magnitude of gain becomes 1 (0 dB)**. For high-speed amplifiers, it indicates the maximum usable frequency when configured in a unity-gain feedback.
+
 
 
 ### 🔹 Common Mode Gain (Avc)
@@ -52,6 +56,7 @@ When both inputs are driven by the same signal (common-mode input), the gain is:
 Where **Vcommon** is the voltage applied equally to both inputs.
 
 
+
 ### 🔹 Common Mode Rejection Ratio (CMRR)
 
 **CMRR = Avd / Avc**
@@ -61,11 +66,13 @@ Where **Vcommon** is the voltage applied equally to both inputs.
 A high CMRR indicates good rejection of common-mode signals (e.g., noise).
 
 
+
 ### 🔹 Input Resistance (Rin) and Output Resistance (Rout)
 
 - **Rin** is typically high to minimize loading on the input source.
 - **Rout** should be low to drive the load effectively.
 
+---
 
 ## Simulation Details
 
